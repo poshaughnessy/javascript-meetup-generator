@@ -216,7 +216,13 @@ function Generator() {
         renderer.setSize( window.innerWidth, window.innerHeight );
         renderer.clear();
 
-        $body.append( $(renderer.domElement) );
+        var $canvas = $(renderer.domElement);
+
+        $canvas.click(function() {
+            spin();
+        });
+
+        $body.append( $canvas );
 
         // Stats
 
@@ -239,7 +245,7 @@ function Generator() {
 
         window.addEventListener( 'resize', onWindowResize, false );
         document.addEventListener( 'keydown', onDocumentKeyDown, false );
-        renderer.domElement.addEventListener( 'mousedown', onMouseDown, false );
+        //renderer.domElement.addEventListener( 'mousedown', onMouseDown, false );
 
     }
 
@@ -525,14 +531,6 @@ function Generator() {
                 event.preventDefault();
                 break;
         }
-
-    }
-
-    function onMouseDown( event ) {
-
-        event.preventDefault();
-
-        spin();
 
     }
 
