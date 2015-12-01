@@ -18,15 +18,39 @@ function Generator() {
         'Swimming',
         'Snorkelling',
         'Zorbing',
-        'Gymnastics'
+        'Gymnastics',
+        'Abseiling',
+        'Badminton',
+        'Baseball',
+        'Camel Riding',
+        'Horse Riding',
+        'Deep Sea Fishing',
+        'Clay Pigeon Shoot',
+        'Dinghy Sailing',
+        'Elephant Riding',
+        'Fell Running',
+        'Go Karting',
+        'Haptathlon',
+        'Ice Skating',
+        'Kite Buggying',
+        'Paint Balling',
+        'Pony Trekking',
+        'River Tubing',
+        'Roller Skating',
+        'Roller Blading',
+        'Motor Biking',
+        'White Water Rafting',
+        'Yachting',
+        'Water Polo',
+        'Water Skiing'
     ];
 
     // Tech adjectives
     var PHRASES_SET_2 = [
         'JS',
-        'JS ',
-        'JS  ',
-        'JS   '
+        '.js',
+        'JavaScript',
+        'JS Devs'
     ];
 
     var MAX_SPEED = 0.8;
