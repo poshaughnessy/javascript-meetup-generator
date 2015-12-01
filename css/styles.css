@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Start of our own styles */
+body {
+    background: #222222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: arial, sans-serif;
+}
+
+a {
+    color: #5ed9e4;
+}
+
+header {
+    position: relative;
+    z-index: 9;
+    padding-top: 40px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Audiowide', arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 2px #000;
+}
+
+h2 {
+    margin: 1em 0 0.1em 0;
+    text-align: center;
+    color: #ccc;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 1.3em;
+}
+
+#idea {
+    box-sizing: border-box;
+    width: 90%;
+    margin-left: 5%;
+    top: 10%;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 7px;
+    position: absolute;
+    display: none;
+    background: rgba(0,0,0,0.9) url(../images/lightbulb-lit.png) center 15px no-repeat;
+    padding: 100px 20px 20px 20px;
+    text-align: center;
+    z-index: 10;
+}
+
+#idea h3 {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+#idea .retryContainer {
+    text-align: center;
+    margin: 1em 0;
+}
+
+#idea a#close {
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background: url(../images/close.png) no-repeat top left;
+}
+
+#idea #close span {
+    display: none;
+}
+
+#idea a.retry {
+    color: #fff;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#idea .contents iframe {
+    width: 78px;
+    height: 28px;
+}
+
+.twitter-share-button {
+    margin: 3em 0 0 0;
+}
+
+#noWebGL {
+    display: none;
+    font-size: 1.3em;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+footer #instructions {
+    font-size: 1.2em;
+}
+
+footer #disclaimer {
+    font-size: 1em;
+    font-style: italic;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
